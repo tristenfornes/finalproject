@@ -6,7 +6,7 @@ const app = express();
 
 // Configuration variables
 const PORT = 5001;
-const MONGO_URI = 'mongodb+srv://tfornes:<password>@cluster0.lyshdzg.mongodb.net/'; 
+const MONGO_URI = 'mongodb+srv://tristenfornes:<password>@cluster0.lyshdzg.mongodb.net/'; 
 
 // Middleware
 app.use(cors());
