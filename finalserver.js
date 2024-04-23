@@ -1,19 +1,20 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
+const path = require('path');
 
 const app = express();
 
 // Configuration variables
-const PORT = 3003;
+const PORT = 3004;
 const MONGO_URI = 'mongodb+srv://tristenfornes47:3haHgYqc093USMjI@cluster0.dab758d.mongodb.net/'; 
 
 // Middleware
 app.use(cors());
-app.use(express.json()); // Using built-in middleware for JSON
+app.use(express.json());
 
 // Database connection
-mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(MONGO_URI)
   .then(() => console.log("MongoDB connected successfully"))
   .catch(err => console.log("MongoDB connection error:", err));
 
@@ -23,7 +24,6 @@ const DataSchema = new mongoose.Schema({
   email: String,
   message: String
 });
-
 const Data = mongoose.model('Data', DataSchema);
 
 // API Routes
@@ -47,35 +47,27 @@ app.get('/data', async (req, res) => {
 });
 
 app.put('/data/:id', async (req, res) => {
-  try {
-    const updatedData = await Data.findByIdAndUpdate(req.params.id, req.body, { new: true });
-    if (!updatedData) {
-      return res.status(404).json({ message: 'Data not found' });
-    }
-    res.json(updatedData);
-  } catch (err) {
-    res.status(400).json({ message: err.message });
+  const updatedData = await Data.findByIdAndUpdate(req.params.id, req.body, { new: true });
+  if (!updatedData) {
+    return res.status(404).json({ message: 'Data not found' });
   }
+  res.json(updatedData);
 });
 
 app.delete('/data/:id', async (req, res) => {
-  try {
-    const result = await Data.findByIdAndDelete(req.params.id);
-    if (!result) {
-      return res.status(404).json({ message: 'Data not found' });
-    }
-    res.json({ message: 'Deleted Successfully' });
-  } catch (err) {
-    res.status(500).json({ message: err.message });
+  const result = await Data.findByIdAndDelete(req.params.id);
+  if (!result) {
+    return res.status(404).json({ message: 'Data not found' });
   }
+  res.json({ message: 'Deleted Successfully' });
 });
 
-// Serve static files
-app.use(express.static('public'));
+// Serve static files from the 'finalproject' directory
+app.use(express.static(path.join(__dirname, 'finalproject')));
 
-// Root route to serve index.html
+// Root route to serve index.html from within the 'finalproject' folder
 app.get('/', (req, res) => {
-  res.sendFile('index.html', { root: 'public' });
+  res.sendFile(path.join(__dirname, 'finalproject', 'index.html'));
 });
 
 // Start the server

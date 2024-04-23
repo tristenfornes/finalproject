@@ -32,3 +32,4 @@ fetch('travel_destinations.json')
         });
     })
     .catch(error => console.error('Error fetching destinations:', error));
+    
