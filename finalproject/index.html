@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OdysseyWays - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">OdysseyWays</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="menu" id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="itineraries.html">Itineraries</a></li>
+                <li><a href="explorers-haven.html">Explorer's Haven</a></li>
+                <li><a href="contact-me.html">Contact Me</a></li>
+                <li><a href="data-entry.html">Data Entry Form</a></li>
+                <li><a href="embedded-content.html">Embedded Content</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content - Home -->
+    <section id="home">
+        <h2>Welcome to OdysseyWays</h2>
+        <p>Your go-to platform for travel inspiration and planning. Explore exciting destinations, curated itineraries, and connect with fellow travelers in Explorer's Haven.</p>
+
+        <!-- Search Form for dynamic data interaction -->
+        <form id="searchForm" onsubmit="return fetchDestinationData();">
+            <input type="text" id="searchInput" placeholder="Search destinations..." required>
+            <button type="submit">Search</button>
+        </form>
+
+        <!-- Slideshow Container -->
+        <div id="slideshow-container">
+            <div class="slide">
+                <img src="images/bali.jpg" alt="Slide 1">
+                <div class="caption">Discover beautiful beaches in Bali</div>
+            </div>
+            <div class="slide">
+                <img src="images/machupicchu.jpg" alt="Slide 2">
+                <div class="caption">Explore ancient ruins in Machu Picchu</div>
+            </div>
+            <!-- Add more slides as needed -->
+        </div>
+
+        <!-- Featured Destinations -->
+        <h3>Featured Destinations</h3>
+        <div id="featuredDestinations">
+            <div class="card">
+                <h4>Santorini, Greece</h4>
+                <p>Explore the stunning white-washed buildings and crystal-clear waters of Santorini. Enjoy breathtaking sunsets over the Aegean Sea.</p>
+            </div>
+            <div class="card">
+                <h4>Kyoto, Japan</h4>
+                <p>Immerse yourself in the rich cultural heritage of Kyoto. Visit historic temples, stroll through bamboo forests, and savor traditional Japanese cuisine.</p>
+            </div>
+            <div class="card">
+                <h4>Grand Canyon, USA</h4>
+                <p>Experience the awe-inspiring beauty of the Grand Canyon. Hike along scenic trails, marvel at towering rock formations, and witness spectacular sunrises and sunsets.</p>
+            </div>
+        </div>
+
+        <!-- Explore Button -->
+        <button id="exploreButton">Explore More</button>
+    </section>
+
+    <div id="content-container">
+        <!-- Additional content -->
+    </div>
+
+    <script src="slideshow.js"></script>
+    <script src="app.js"></script> 
+</body>
+</html>

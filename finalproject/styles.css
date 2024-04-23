@@ -1,0 +1,249 @@
+/* Body styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5; /* Light gray background */
+  color: #333; /* Dark gray text */
+}
+
+/* Common styles for cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px auto; 
+  max-width: 1200px; 
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px;
+  width: calc(33.33% - 40px);
+  box-sizing: border-box;
+  background-color: #fff; /* White background for cards */
+}
+
+/* Home Page styles */
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#slideshow-container {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 20px; 
+}
+
+.slide {
+  display: none;
+  width: 100%;
+}
+
+.slideshow img {
+  width: 100%;
+  display: none;
+}
+
+.caption {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 8px;
+}
+
+#featuredDestinations {
+  width: 100%;
+  margin-top: 20px; /* Adjust spacing */
+}
+
+#exploreButton {
+  margin: 20px auto; /* Center button horizontally */
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #3498db; /* Blue button */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Destinations and Itineraries Page styles */
+section#destinations,
+section#itineraries {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* Explorer's Haven Page styles */
+section#explorersHaven {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#userPosts,
+#userSubmissionForm {
+  width: 100%;
+  max-width: 800px;
+}
+
+#userSubmissionForm {
+  margin-top: 20px;
+}
+
+#userSubmissionForm input,
+#userSubmissionForm textarea,
+#userSubmissionForm button {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Contact Me Form styles */
+.contact-form-container,
+.data-entry-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  max-width: 800px; 
+  margin: 0 auto; 
+}
+
+.contact-form,
+.data-entry-form {
+  width: 100%; 
+}
+
+.contact-form input,
+.contact-form textarea,
+.data-entry-form input,
+.data-entry-form textarea {
+  width: calc(100% - 20px); 
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.contact-form button,
+.data-entry-form button {
+  width: calc(100% - 20px); 
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #4CAF50; /* Green button */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form button:hover,
+.data-entry-form button:hover {
+  background-color: #45a049; /* Darker green button on hover */
+}
+
+.success-message,
+.error-message {
+  display: none;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.success-message {
+  background-color: #4CAF50; /* Green background for success message */
+  color: white;
+}
+
+.error-message {
+  background-color: #f44336; /* Red background for error message */
+  color: white;
+}
+
+/* IFrame styles */
+#iframe-container {
+  width: 100%;
+  margin-top: 50px;
+}
+
+#iframe {
+  width: 80%;
+  height: 500px;
+  border: none;
+}
+
+/* Hamburger Menu styles */
+.navbar {
+  background-color: #333; /* Dark background color for navbar */
+  overflow: hidden;
+}
+
+.logo {
+  float: left;
+}
+
+.menu {
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  .card {
+      width: calc(50% - 40px); /* Adjust card width for better responsiveness */
+  }
+
+  #exploreButton {
+      width: 80%;
+  }
+
+  input[type="text"],
+  #userSubmissionForm input,
+  #userSubmissionForm textarea,
+  #userSubmissionForm button {
+      width: 100%;
+  }
+
+  /* Center items on mobile */
+  .card-container,
+  .contact-form-container,
+  .data-entry-form-container,
+  #home {
+    align-items: center;
+  }
+}

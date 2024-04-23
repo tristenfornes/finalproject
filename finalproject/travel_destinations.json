@@ -1,0 +1,99 @@
+[
+    {
+      "_id": 1,
+      "img_name": "santorini.jpg",
+      "name": "Santorini, Greece",
+      "description": "Explore the stunning white-washed buildings and crystal-clear waters of Santorini. Enjoy breathtaking sunsets over the Aegean Sea.",
+      "attractions": ["Caldera", "Oia Sunset", "Akrotiri Archaeological Site"],
+      "activities": ["Wine Tasting", "Boat Tours", "Hiking"],
+      "climate": "Mediterranean",
+      "best_time_to_visit": "April to November",
+      "currency": "Euro",
+      "language": "Greek"
+    },
+    {
+      "_id": 2,
+      "img_name": "kyoto.jpg",
+      "name": "Kyoto, Japan",
+      "description": "Immerse yourself in the rich cultural heritage of Kyoto. Visit historic temples, stroll through bamboo forests, and savor traditional Japanese cuisine.",
+      "attractions": ["Kinkaku-ji", "Fushimi Inari-taisha", "Arashiyama Bamboo Grove"],
+      "activities": ["Tea Ceremony", "Kimono Rental", "Zen Meditation"],
+      "climate": "Temperate",
+      "best_time_to_visit": "March to May, September to November",
+      "currency": "Japanese Yen",
+      "language": "Japanese"
+    },
+    {
+      "_id": 3,
+      "img_name": "grand_canyon.jpg",
+      "name": "Grand Canyon, USA",
+      "description": "Experience the awe-inspiring beauty of the Grand Canyon. Hike along scenic trails, marvel at towering rock formations, and witness spectacular sunrises and sunsets.",
+      "attractions": ["South Rim", "North Rim", "Havasu Falls"],
+      "activities": ["Hiking", "Rafting", "Helicopter Tours"],
+      "climate": "Desert",
+      "best_time_to_visit": "Spring and Fall",
+      "currency": "US Dollar",
+      "language": "English"
+    },
+    {
+      "_id": 4,
+      "img_name": "paris.jpg",
+      "name": "Paris, France",
+      "description": "Discover the romance and charm of Paris. Explore iconic landmarks such as the Eiffel Tower, Louvre Museum, and Notre-Dame Cathedral.",
+      "attractions": ["Eiffel Tower", "Louvre Museum", "Notre-Dame Cathedral"],
+      "activities": ["Café Hopping", "River Seine Cruise", "Shopping on Champs-Élysées"],
+      "climate": "Temperate",
+      "best_time_to_visit": "April to June, September to October",
+      "currency": "Euro",
+      "language": "French"
+    },
+    {
+      "_id": 5,
+      "img_name": "bali.jpg",
+      "name": "Bali, Indonesia",
+      "description": "Experience the enchanting beauty of Bali. Relax on pristine beaches, explore lush rice terraces, and immerse yourself in vibrant cultural traditions.",
+      "attractions": ["Ubud Monkey Forest", "Tanah Lot Temple", "Tegallalang Rice Terraces"],
+      "activities": ["Surfing", "Yoga Retreats", "Balinese Cooking Classes"],
+      "climate": "Tropical",
+      "best_time_to_visit": "April to October",
+      "currency": "Indonesian Rupiah",
+      "language": "Indonesian"
+    },
+    {
+      "_id": 6,
+      "img_name": "rome.jpg",
+      "name": "Rome, Italy",
+      "description": "Step back in time in the Eternal City of Rome. Explore ancient ruins, admire Renaissance art, and indulge in delicious Italian cuisine.",
+      "attractions": ["Colosseum", "Vatican City", "Trevi Fountain"],
+      "activities": ["Historical Tours", "Gelato Tasting", "Piazza Navona Strolls"],
+      "climate": "Mediterranean",
+      "best_time_to_visit": "April to June, September to October",
+      "currency": "Euro",
+      "language": "Italian"
+    },
+    {
+      "_id": 7,
+      "img_name": "cape_town.jpg",
+      "name": "Cape Town, South Africa",
+      "description": "Discover the natural beauty and cultural diversity of Cape Town. Explore Table Mountain, relax on pristine beaches, and experience vibrant neighborhoods.",
+      "attractions": ["Table Mountain", "Robben Island", "Kirstenbosch National Botanical Garden"],
+      "activities": ["Wine Tasting", "Safari Tours", "Township Visits"],
+      "climate": "Mediterranean",
+      "best_time_to_visit": "October to April",
+      "currency": "South African Rand",
+      "language": "Afrikaans, English"
+    },
+    {
+      "_id": 8,
+      "img_name": "sydney.jpg",
+      "name": "Sydney, Australia",
+      "description": "Experience the cosmopolitan vibe and stunning landscapes of Sydney. Visit iconic landmarks, relax on beautiful beaches, and enjoy a vibrant arts and culture scene.",
+      "attractions": ["Sydney Opera House", "Bondi Beach", "Sydney Harbour Bridge"],
+      "activities": ["Harbour Cruises", "Coastal Walks", "Art Gallery Visits"],
+      "climate": "Temperate",
+      "best_time_to_visit": "September to November, March to May",
+      "currency": "Australian Dollar",
+      "language": "English"
+    }
+  ]
+  
