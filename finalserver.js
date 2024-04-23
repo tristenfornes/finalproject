@@ -5,8 +5,8 @@ const cors = require('cors');
 const app = express();
 
 // Configuration variables
-const PORT = 5001;
-const MONGO_URI = 'mongodb+srv://tristenfornes:<password>@cluster0.lyshdzg.mongodb.net/'; 
+const PORT = 5002;
+const MONGO_URI = 'mongodb+srv://tristenfornes47:<password>@cluster0.dab758d.mongodb.net/'; 
 
 // Middleware
 app.use(cors());
